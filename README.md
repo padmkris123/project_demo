@@ -14,8 +14,11 @@ Pre-requisites: </br>
 8. Run command 'gem install compass'. (For MAC users only: you will have to use sudo rights) </br>
 </br>
 How to run the project? </br>
-1. Copy the project folder to your workspace. </br>
-2. Go to the project directory. </br>
+1. Checkout the project from Git. </br>
+  a. Go to your workspace. </br>
+  b. (For the first time) Run command 'git clone https://github.com/padmkris123/project_demo.git' </br>
+  c. You will see a new folder created in your workspace. </br>
+2. Go inside the project directory. </br>
 3. Run command 'npm install'. Installs all the modules under package,json to node_module folder </br>
 4. Run command 'bower install'. Installs all the libraries under bower.json to bower_components </br>
 5. Run 'grunt serverLive'. </br>
