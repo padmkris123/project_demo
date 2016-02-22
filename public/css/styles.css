@@ -1,0 +1,99 @@
+@import url(../bower_components/bootstrap/dist/css/bootstrap.min.css);
+/* line 1, ../sass/_main.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 4, ../sass/_main.scss */
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/* line 9, ../sass/_main.scss */
+.logo {
+  display: inline-block;
+  margin: 20px 15px 0 15px;
+}
+
+/* line 14, ../sass/_main.scss */
+#main-logo {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 15, ../sass/_main.scss */
+.brand-name {
+  color: #fff !important;
+}
+
+/* line 16, ../sass/_main.scss */
+#navbar {
+  float: right;
+}
+
+/* line 17, ../sass/_main.scss */
+#jquery-logo {
+  width: 122px;
+}
+
+/* line 18, ../sass/_main.scss */
+#bootstrap-logo {
+  width: 54px;
+}
+
+/* line 19, ../sass/_main.scss */
+#sass-logo {
+  width: 62px;
+}
+
+/* line 20, ../sass/_main.scss */
+#yeoman-logo {
+  width: 75px;
+}
+
+/* line 21, ../sass/_main.scss */
+#npm-logo {
+  width: 70px;
+}
+
+/* line 22, ../sass/_main.scss */
+#grunt-logo {
+  width: 63px;
+}
+
+/* line 23, ../sass/_main.scss */
+#bower-logo {
+  width: 63px;
+}
+
+/* line 24, ../sass/_main.scss */
+#compass-logo {
+  width: 63px;
+}
+
+/* line 25, ../sass/_main.scss */
+.cols-margin {
+  margin-top: 42px;
+}
+
+/* line 26, ../sass/_main.scss */
+.gray-text {
+  color: #A5A5A5;
+}
+
+/* line 27, ../sass/_main.scss */
+.docs-btn {
+  background-color: #BC24D9;
+  border-color: #8D1BA2;
+  width: 300px;
+  height: 72px;
+  font-size: 26px;
+  margin-top: 27px;
+  line-height: 2em;
+}
+/* line 36, ../sass/_main.scss */
+.docs-btn:hover, .docs-btn:active, .docs-btn:focus {
+  background-color: #8D1BA2 !important;
+  border-color: #8D1BA2 !important;
+}
