@@ -97,3 +97,31 @@ body {
   background-color: #8D1BA2 !important;
   border-color: #8D1BA2 !important;
 }
+
+/* line 4, ../sass/styles.scss */
+#form1 {
+  padding-top: 0.5rem;
+  display: -webkit-inline-box;
+  padding-left: 2rem;
+}
+
+/* line 9, ../sass/styles.scss */
+.top-padding-2_0 {
+  padding-top: 2.0rem !important;
+}
+
+/* line 13, ../sass/styles.scss */
+#header {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+/* line 18, ../sass/styles.scss */
+.inline {
+  display: inline-flex;
+}
+
+/* line 22, ../sass/styles.scss */
+#staticForm .inline label {
+  padding-right: 1rem;
+}

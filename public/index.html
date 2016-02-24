@@ -32,20 +32,82 @@
                 <img id="main-logo" src="images/logos/jb-logo.jpg">
                 <span class="navbar-brand brand-name">Project name</span>
             </div>
-            <div id="navbar" class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse">
+              <form id="form1" class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="searchText" name="searchText" placeholder="C number">
+                </div>
+                <button id="search" type="submit" class="btn btn-primary">Search</button>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-text">Welcome,<b> Arvind</b></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My account<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!--div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li>Hi Arvind!</li>
                     <li><a href="#">Logout</a></li>
                 </ul>
-            </div>
+            </div-->
         </div>
     </nav>
+    <div class="container-fluid  top-padding-2_0">
+      <div class="panel panel-default">
+        <div class="panel-heading">Search information</div>
+        <!--div class="panel-body">
+            <p>Some one liner description</p>
+        </div-->
 
+        <div class="row">
+          <div class="col-xs-12">
+            <!--Body content-->
+            <div id="staticForm" class="form-horizontal">
+              <div class="col-sm-3 inline">
+                <label class="control-label">First name</label>
+                <p id="field1" name="firstName" class="form-control-static"></p>
+              </div>
+              <div class="col-sm-3 inline">
+                <label class="control-label">Last name</label>
+                <p id="field2" name="lastName" class="form-control-static"></p>
+              </div>
+              <div class="col-sm-3 inline">
+                <label class="control-label">Field 3</label>
+                <p id="field3" name="" class="form-control-static"></p>
+              </div>
+              <div class="col-sm-3 inline">
+                <label class="control-label">Field 4</label>
+                <p id="field4" name="" class="form-control-static"></p>
+              </div>
+              <div class="col-sm-3 inline">
+                <label class="control-label">Field 5</label>
+                <p id="field5" name="" class="form-control-static"></p>
+              </div>
+              <div class="col-sm-3 inline">
+                <label class="control-label">Field 6</label>
+                <p id="field6" name="" class="form-control-static"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row">
-      <div class="col-xs-4">
-        <div class="container">
+      <div class="col-xs-3">
+        <div id="header">
           <div id="jstree"></div>
-          <button id="getResults">Get results</button>
+        </div>
+        <div id="header-content" class="top-padding-2_0" style="right:0">
+            <button id="getResults" class="btn btn-primary">Get results</button>
         </div>
       </div>
       <div class="col-xs-8">

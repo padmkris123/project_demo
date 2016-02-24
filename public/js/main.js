@@ -1,6 +1,29 @@
-/*$(document).ready(function(){
-    console.log('its working !');
-})*/
+$(document).ready(function(){
+/*
+    $("#form1").submit(function (e) {
+
+
+    });*/
+
+    $('#form1').validate({ // initialize the plugin
+       rules: {
+           searchText: {
+               required: true
+           }
+       },submitHandler: function (form, event) { // for demo
+         event.preventDefault();
+         $.getJSON('../data/formData1.json', function(data) {
+             for (var i in data) {
+                 $('p[name="'+i+'"]').text(data[i]);
+             }
+         });
+        return false; // for demo
+      }
+
+   });
+})
+
+/*********** form  ************/
 
 /*********** jsTree ************/
 $(function () {

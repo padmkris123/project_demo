@@ -1,2 +1,24 @@
 @import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
 @import "main.scss";
+
+#form1{
+  padding-top:0.5rem;
+  display: -webkit-inline-box;
+  padding-left: 2rem;
+}
+.top-padding-2_0{
+  padding-top: 2.0rem !important;
+}
+
+#header {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.inline{
+  display: inline-flex;
+}
+
+#staticForm .inline label{
+  padding-right: 1rem;
+}

@@ -9,7 +9,7 @@ Pre-requisites: </br>
 3. Git (http://git-scm.com/) </br>
 4. Bower - run command 'npm install --global bower' </br>
 5. Grunt - run command 'npm install --global grunt-cli' </br>
-6. (For MAC users only) Run command 'xcode-select --install' </br>
+6. (For MAC users only) Run command 'xcode-select --install'. </br>
 7. Run command 'gem update --system'. (For MAC users only: you will have to use sudo rights) </br>
 8. Run command 'gem install compass'. (For MAC users only: you will have to use sudo rights) </br>
 </br>
@@ -19,7 +19,7 @@ How to run the project? </br>
   b. (For the first time) Run command 'git clone https://github.com/padmkris123/project_demo.git' </br>
   c. You will see a new folder created in your workspace. </br>
 2. Go inside the project directory. </br>
-3. Run command 'npm install'. Installs all the modules under package,json to node_module folder </br>
+3. Run command 'npm install'. Installs all the modules under package.json to node_module folder </br>
 4. Run command 'bower install'. Installs all the libraries under bower.json to bower_components </br>
 5. Run 'grunt serverLive'. </br>
 6. Go to browser and use http://localhost:8000 to access the project. </br>
@@ -27,11 +27,10 @@ How to run the project? </br>
 </br></br>
 Pending items: </br>
 1. Fix filter functionality in grid </br>
-2. add search field. (cnum = c12345.) </br>
-3. add static form. </br>
-4. polish the navbar (add logged in user's name) </br>
-5. add login screen / manage accounts.
-6. Add validation on tree.
-7. click on table row should open pdf doc in new tab.
-8. take the 'Go results' button to the bottom of the page.
-9. rename grid columns/ tree structure.
+2. Fix responsiveness of navbar
+3. add login screen / manage accounts.
+4. Add validation on tree.
+5. click on table row should open pdf doc in new tab.
+6. take the 'Go results' button to the bottom of the page.
+7. rename grid columns/ tree structure.
+8. Fix overall css.
