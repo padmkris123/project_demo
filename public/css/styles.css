@@ -1,88 +1,92 @@
-@import url(../bower_components/bootstrap/dist/css/bootstrap.min.css);
-/* line 1, ../sass/_main.scss */
+@import url(../bower_components/bootstrap/dist/css/bootstrap.css);
+@import url(../bower_components/jstree/dist/themes/default/style.css);
+@import url(../bower_components/jsgrid/dist/jsgrid.css);
+@import url(../bower_components/jsgrid/dist/jsgrid-theme.css);
+@import url(../bower_components/jquery-ui/themes/smoothness/jquery-ui.css);
+/* line 7, ../sass/styles.scss */
 body {
   padding-top: 50px;
 }
 
-/* line 4, ../sass/_main.scss */
+/* line 10, ../sass/styles.scss */
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
 
-/* line 9, ../sass/_main.scss */
+/* line 15, ../sass/styles.scss */
 .logo {
   display: inline-block;
   margin: 20px 15px 0 15px;
 }
 
-/* line 14, ../sass/_main.scss */
+/* line 20, ../sass/styles.scss */
 #main-logo {
   float: left;
   margin-right: 15px;
 }
 
-/* line 15, ../sass/_main.scss */
+/* line 21, ../sass/styles.scss */
 .brand-name {
   color: #fff !important;
 }
 
-/* line 16, ../sass/_main.scss */
+/* line 22, ../sass/styles.scss */
 #navbar {
   float: right;
 }
 
-/* line 17, ../sass/_main.scss */
+/* line 23, ../sass/styles.scss */
 #jquery-logo {
   width: 122px;
 }
 
-/* line 18, ../sass/_main.scss */
+/* line 24, ../sass/styles.scss */
 #bootstrap-logo {
   width: 54px;
 }
 
-/* line 19, ../sass/_main.scss */
+/* line 25, ../sass/styles.scss */
 #sass-logo {
   width: 62px;
 }
 
-/* line 20, ../sass/_main.scss */
+/* line 26, ../sass/styles.scss */
 #yeoman-logo {
   width: 75px;
 }
 
-/* line 21, ../sass/_main.scss */
+/* line 27, ../sass/styles.scss */
 #npm-logo {
   width: 70px;
 }
 
-/* line 22, ../sass/_main.scss */
+/* line 28, ../sass/styles.scss */
 #grunt-logo {
   width: 63px;
 }
 
-/* line 23, ../sass/_main.scss */
+/* line 29, ../sass/styles.scss */
 #bower-logo {
   width: 63px;
 }
 
-/* line 24, ../sass/_main.scss */
+/* line 30, ../sass/styles.scss */
 #compass-logo {
   width: 63px;
 }
 
-/* line 25, ../sass/_main.scss */
+/* line 31, ../sass/styles.scss */
 .cols-margin {
   margin-top: 42px;
 }
 
-/* line 26, ../sass/_main.scss */
+/* line 32, ../sass/styles.scss */
 .gray-text {
   color: #A5A5A5;
 }
 
-/* line 27, ../sass/_main.scss */
+/* line 33, ../sass/styles.scss */
 .docs-btn {
   background-color: #BC24D9;
   border-color: #8D1BA2;
@@ -92,36 +96,36 @@ body {
   margin-top: 27px;
   line-height: 2em;
 }
-/* line 36, ../sass/_main.scss */
+/* line 42, ../sass/styles.scss */
 .docs-btn:hover, .docs-btn:active, .docs-btn:focus {
   background-color: #8D1BA2 !important;
   border-color: #8D1BA2 !important;
 }
 
-/* line 4, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 #form1 {
   padding-top: 0.5rem;
   display: -webkit-inline-box;
   padding-left: 2rem;
 }
 
-/* line 9, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 .top-padding-2_0 {
   padding-top: 2.0rem !important;
 }
 
-/* line 13, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 #header {
   display: table-cell;
   vertical-align: bottom;
 }
 
-/* line 18, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 .inline {
   display: inline-flex;
 }
 
-/* line 22, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 #staticForm .inline label {
   padding-right: 1rem;
 }
