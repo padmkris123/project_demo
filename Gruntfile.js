@@ -3,21 +3,43 @@ module.exports = function(grunt){
 
     require('time-grunt')(grunt);
     require('jit-grunt')(grunt);
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        copy: {
+          images: {
+            expand: true,
+            cwd: "public/images/logos",
+            src: '**/*',
+            dest: 'public/dist/css/images/'
+          },
+          jsTreeImages: {
+            expand: true,
+            cwd: "public/bower_components/jstree/dist/themes/default/",
+            src: ['**/*.png', '**/*.gif'],
+            dest: 'public/dist/css'
+          }
+        },
         concat: {
-            options: {
-                separator: ';'
-            },
-            dist: {
-                src: [
-                    'public/bower_components/jquery/dist/jquery.min.js',
-                    'public/bower_components/bootstrap/dist/js/bootstrap.min.js',
-                    'public/js/**/*.js'
-                ],
-                dest: 'public/dist/scripts.js'
-            }
+          options: {
+              separator: ';'
+          },
+          basic: {
+            src: [
+                'public/bower_components/jquery/dist/jquery.min.js',
+                'public/bower_components/jquery-ui/jquery-ui.min.js',
+                'public/bower_components/jquery-validation/dist/jquery.validate.min.js',
+                'public/bower_components/bootstrap/dist/js/bootstrap.min.js',
+                'public/bower_components/jstree/dist/jstree.min.js',
+                'public/bower_components/jsgrid/dist/jsgrid.min.js'
+            ],
+            dest: 'public/dist/scripts.js'
+          },
+          extras: {
+            src: ['public/js/**/*.js'],
+            dest: 'public/dist/main.js',
+          },
         },
         uglify: {
             options: {
@@ -25,7 +47,7 @@ module.exports = function(grunt){
             },
             dist: {
                 files: {
-                    'public/dist/scripts.min.js': ['<%= concat.dist.dest %>']
+                    'public/dist/main.min.js': ['<%= concat.dist.dest %>']
                 }
             }
         },
@@ -61,7 +83,7 @@ module.exports = function(grunt){
         cssmin: {
             dist: {
                 files: {
-                    'public/dist/styles.min.css' : ['public/css/**/*.css']
+                    'public/dist/css/styles.min.css' : ['public/css/**/*.css']
                 }
             }
         },
@@ -73,7 +95,11 @@ module.exports = function(grunt){
         watch: {
             css: {
                 files: 'public/sass/**/*.scss',
-                tasks: ['compassCompile']
+                tasks: ['compassCompile','cssmin']
+            },
+            js: {
+                files: 'public/js/**/*.js',
+                tasks: ['concat:extras']
             },
             livereload: {
                 options: {
@@ -117,7 +143,8 @@ module.exports = function(grunt){
         'cssmin',
         //'jshint',
         'concat',
-        'uglify'
+        'copy'
+        //'uglify'
     ]);
 
     grunt.registerTask('compassCompile', [
@@ -131,7 +158,7 @@ module.exports = function(grunt){
     ]);
 
     grunt.registerTask('serverLive', [
-        'compass:compassCompile',
+        'dist',
         'connect:serverLive',
         'watch'
     ]);

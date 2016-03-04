@@ -27,10 +27,10 @@ How to run the project? </br>
 </br></br>
 Pending items: </br>
 1. Fix filter functionality in grid </br>
-2. Fix responsiveness of navbar
-3. add login screen / manage accounts.
-4. Add validation on tree.
-5. click on table row should open pdf doc in new tab.
-6. take the 'Go results' button to the bottom of the page.
-7. rename grid columns/ tree structure.
-8. Fix overall css.
+2. Fix responsiveness of navbar/jstree </br>
+3. add login screen / manage accounts. </br>
+4. Add validation on tree. </br>
+5. click on table row should open pdf doc in new tab. </br>
+6. take the 'Go results' button to the bottom of the page. </br>
+7. rename grid columns/ tree structure. </br>
+8. Fix overall css. </br>
